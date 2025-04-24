@@ -2,6 +2,8 @@
 //    const links = document.querySelectorAll('.titles a');
 //    console.log('links:', links);
 //  });
+
+/* ZADANIE 5.3 */
 const titleClickHandler = function(event){
     console.log('Link was clicked!');
     console.log('event: ', event);
