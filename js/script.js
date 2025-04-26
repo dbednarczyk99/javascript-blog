@@ -1,8 +1,3 @@
-//document.getElementById('test-button').addEventListener('click', function(){
-//    const links = document.querySelectorAll('.titles a');
-//    console.log('links:', links);
-//  });
-
 /* ZADANIE 5.3 */
 const titleClickHandler = function(event){
   //console.log('Link was clicked!');
@@ -227,7 +222,7 @@ function generateAuthors(){
 }
 
 const authorClickHandler = function(event){
-  
+
   /* [DONE] prevent default action for this event */
   event.preventDefault();
   console.log('Author was clicked!');
