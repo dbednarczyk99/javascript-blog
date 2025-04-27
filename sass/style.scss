@@ -85,6 +85,42 @@ body {
   }
 }
 
+.tags {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+  li {
+    padding: 5px;
+    text-align: center;
+    a {
+      text-decoration: none;
+    }
+  }
+  .tag-size-5{
+    font-size: 34px;
+    color:rgb(47, 95, 35);
+  }
+  .tag-size-4{
+    font-size: 30px;
+    color: rgb(46, 156, 101); 
+  }
+  .tag-size-3{
+    font-size: 26px;
+    color: rgb(46, 14, 121);
+  }
+  .tag-size-2{
+    font-size: 22px;
+    color: rgb(165, 28, 74);
+  }
+  .tag-size-1{
+    font-size: 18px;
+    color: rgb(113, 124, 14); 
+  }
+
+}
+
 .list-horizontal {
   li {
     display: inline-block;
