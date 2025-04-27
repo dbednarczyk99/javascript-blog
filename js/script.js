@@ -314,7 +314,7 @@ function generateAuthors(){
   /* [NEW] START LOOP: for each author in allAuthors: */
   for(let author in allAuthors){
     /* [NEW] generate code of a link and add it to allAuthorsHTML */
-    allAuthorsHTML += '<li><a href="#author-' + author + '"><span>' + author + ' (' + allAuthors[author] +' )</span></a></li>';
+    allAuthorsHTML += '<li><a href="#author-' + author + '"><span>' + author + ' (' + allAuthors[author] +')</span></a></li>';
   }
   console.log(allAuthors);
 
