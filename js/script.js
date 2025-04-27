@@ -11,8 +11,8 @@ const select ={
     articles: '.post',
     titles: '.post-title',
     linksTo: {
-      tags: 'a[href^="#tag-"]',
-      authors: 'a[href^="#author-"]'
+      tags: 'a.active[href^="#tag-"]',
+      author: 'a.active[href^="#author-"]'
     }
   },
   article: {
@@ -238,7 +238,7 @@ const tagClickHandler = function(event){
   const tag = href.replace('#tag-', '');
 
   /* [DONE] find all tag links with class active */
-  const activeTags = document.querySelectorAll('a.active[href^="#tag-"]');
+  const activeTags = document.querySelectorAll(select.all.linksTo.tags);
   //console.log("Aktywne Tagi: ",activeTags);
 
   /* [DONE] START LOOP: for each active tag link */
@@ -266,7 +266,7 @@ const tagClickHandler = function(event){
   generateTitleLinks('[data-tags~="' + tag + '"]');
 
   /* [DONE] check the outcome of the function */
-  const activeTags2 = document.querySelectorAll('a.active[href^="#tag-"]');
+  const activeTags2 = document.querySelectorAll(select.all.linksTo.tags);
   console.log("Aktywne Tagi: ",activeTags2);
 }
 
@@ -325,7 +325,7 @@ const authorClickHandler = function(event){
   const author = href.replace('#author-', '');
 
   /* [DONE] find all author links with class active */
-  const activeAuthors = document.querySelectorAll('a.active[href^="#author-"]');
+  const activeAuthors = document.querySelectorAll(select.all.linksTo.author);
   console.log("Aktywne authors: ",activeAuthors);
 
   /* [DONE] START LOOP: for each active author link */
@@ -354,7 +354,7 @@ const authorClickHandler = function(event){
   generateTitleLinks('[data-author="' + author + '"]');
 
   /* [DONE] check the outcome of the function */
-  //const activeAuthors2 = document.querySelectorAll('a.active[href^="#author-"]');
+  //const activeAuthors2 = document.querySelectorAll(select.all.linksTo.author);
   //console.log("Aktywne Tagi: ",activeAuthors2);
 }
 
