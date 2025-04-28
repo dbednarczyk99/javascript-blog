@@ -336,7 +336,7 @@ function generateAuthors(){
   const authorList = document.querySelector(select.listOf.authors);
 
   /* [NEW] create variable for all links HTML code */
-  let allAuthorsHTML = '';
+  //let allAuthorsHTML = '';
 
   /* [NEW] START LOOP: for each author in allAuthors: */
   for(let author in allAuthors){
